@@ -1,4 +1,5 @@
 nomes='Bernardo Arnaldo Sumbane'
+
 partes=nomes.split()
 juncao='-'.join(nomes)
 

@@ -1,8 +1,9 @@
-nomes='Bene Laura Ana Julia'
+import random
 
-pulo=nomes[9:20:2]
+def gerar_numeros():
+    # Sorteia 6 números únicos entre 1 e 60 (como na Mega-Sena, por exemplo)
+    numeros = random.sample(range(1, 61), 6)
+    return sorted(numeros)
 
-print(len(nomes))
-print(pulo) 
-print(nomes[9:])
-print(nomes[9::3])
+# Executando
+print("Seus 6 números sorteados são:", gerar_numeros())
